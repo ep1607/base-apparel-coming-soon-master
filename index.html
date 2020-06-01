@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -31,14 +32,20 @@
         </div>
         
         <div id="subscribe-section">
-          <form action="/">
-            <input type="email" name="" id="" placeholder="Email Address">
-            <button type="submit"> 
-              <img src="/images/icon-arrow.svg" alt="">
-            </button>
-        </form>
+          <form name="subscribeForm" action="/">
+            <div id="formField">
+                <input type="email" name="femail" id="email_input" placeholder="Email Address">
+                <img id="error_icon" src="/images/icon-error.svg">
+                <button type="button" onclick="ValidateEmail(document.subscribeForm.femail)"> 
+                  <img src="/images/icon-arrow.svg" alt="">
+                </button>
+              </div>
+              <div id="formError"></div>
+          </form>
         </div>  
       </div>
+      
+
     
       <div class="right-side image-section desktop">
         <img src="images/hero-desktop.jpg" alt="hero-image">

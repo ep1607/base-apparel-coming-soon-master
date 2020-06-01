@@ -98,22 +98,22 @@ body {
   margin-left: auto;
 }
 
-button[type=submit], input[type=email] {
+button[type=button], input[type=email] {
   height: 50px;
   border: none;
 }
 
-button[type=submit] {
+button[type=button] {
   position: absolute;
   border-radius: 50px;
   width: 90px;
-  height: 52px;
+  height: 54px;
   right: 0;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
   box-shadow: -4px 7px 15px 8px rgba(238, 140, 140, 0.25);
 }
 
-input[type=email] {
+#email_input {
   position: absolute;
   width: 90%;
   height: 50px;
@@ -122,6 +122,25 @@ input[type=email] {
   border-radius: 50px;
   padding-left: 25px;
   background-color: transparent;
+}
+
+#formField {
+  height: 52px;
+  margin-bottom: 8px;
+}
+
+#formError {
+  color: #f96262;
+  font-size: 0.8em;
+  padding-left: 20px;
+  position: relative;
+}
+
+#error_icon {
+  display: none;
+  position: absolute;
+  right: 110px;
+  top: 44px;
 }
 
 input::placeholder {
