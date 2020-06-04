@@ -98,22 +98,25 @@ body {
   margin-left: auto;
 }
 
-button[type=button], input[type=email] {
+input[type=submit], input[type=email] {
   height: 50px;
   border: none;
 }
 
-button[type=button] {
+input[type=submit] {
   position: absolute;
   border-radius: 50px;
   width: 90px;
   height: 54px;
   right: 0;
-  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  background: url("/images/icon-arrow.svg"), linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
   box-shadow: -4px 7px 15px 8px rgba(238, 140, 140, 0.25);
 }
 
-#email_input {
+#email {
   position: absolute;
   width: 90%;
   height: 50px;
@@ -136,7 +139,7 @@ button[type=button] {
   position: relative;
 }
 
-#error_icon {
+#error-icon {
   display: none;
   position: absolute;
   right: 110px;
